@@ -1,0 +1,21 @@
+inherit_from: .rubocop_todo.yml
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/LineLength:
+  Max: 130  
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/MixinUsage:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/ExpandPathArguments:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/{rails,rake}'
+    - !ruby/regexp /old_and_unused\.rb$/
