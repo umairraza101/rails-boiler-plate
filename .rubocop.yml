@@ -5,6 +5,8 @@ Metrics/LineLength:
   Max: 130  
 Style/ClassAndModuleChildren:
   Enabled: false
+Style/Proc:
+  Enabled: false
 Style/MixinUsage:
   Enabled: false
 Style/Documentation:
