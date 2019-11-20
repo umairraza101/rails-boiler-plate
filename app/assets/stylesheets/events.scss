@@ -30,3 +30,8 @@
 .nav-link{
   color: white;
 }
+
+.page-item.active .page-link{
+  border-color: black;
+  background-color: black;
+}

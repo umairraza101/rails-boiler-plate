@@ -1,5 +1,7 @@
 class Event < ApplicationRecord
   enum status: %i[draft published]
+  has_attached_file :photo, default_url: '/events.jpeg'
+  validates_attachment_content_type :photo, content_type: %w[image/jpg image/jpeg image/png image/gif]
 
   validates_presence_of :title, if: Proc.new { |e| e.published? }
   validates_presence_of :start_date
@@ -8,8 +10,8 @@ class Event < ApplicationRecord
 
   belongs_to :user
 
-  def photo
-    '/events.jpeg'
+  def photo_url
+    photo.url
   end
 
   private

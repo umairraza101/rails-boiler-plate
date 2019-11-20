@@ -1,5 +1,5 @@
 <div class='w-50 m-auto pt-4'>
-  <%= form_with(model: event, local: true) do |form| %>
+  <%= form_with(model: event, local: true, multipart: true) do |form| %>
     <% if event.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
@@ -16,6 +16,10 @@
       <%= form.label :title %>
       <%= form.text_field :title, class: 'form-control' %>
     </div>
+    <div class="field">
+      <%= form.label :photo %>
+      <%= form.file_field :photo, class: 'form-control p-1' %>
+    </div>
     <div class="datetimerange" style="position: relative;">
       <div class="field">
         <%= form.label :start_date, class: 'd-block' %>
@@ -29,7 +33,7 @@
     </div>
     <div class="field">
       <%= form.label :description %>
-      <%= form.text_area :description, class: 'form-control' %>
+      <%= form.cktext_area :description, class: 'form-control', ckeditor: {language: 'en'} %>
     </div>
 
     <div class="field">

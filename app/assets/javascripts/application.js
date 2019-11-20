@@ -15,7 +15,7 @@
 //= require rails-ujs
 //= require popper
 //= require bootstrap
-//= require moment
+//= require init_ckeditor
 //= require activestorage
 //= require custom
 //= require turbolinks

@@ -8,6 +8,7 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag Ckeditor.cdn_url
   %body
     .container-fluid.pl-0.pr-0.pb-4.mb-4{style: 'overflow: hidden;'}
       = render 'shared/header'
