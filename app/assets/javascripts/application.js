@@ -15,7 +15,8 @@
 //= require rails-ujs
 //= require popper
 //= require bootstrap
+//= require moment
 //= require activestorage
 //= require custom
 //= require turbolinks
-//= require_tree .
+//= require datetime

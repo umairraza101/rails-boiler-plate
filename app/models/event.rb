@@ -8,6 +8,10 @@ class Event < ApplicationRecord
 
   belongs_to :user
 
+  def photo
+    '/events.jpeg'
+  end
+
   private
 
   def end_date_gt_start_date

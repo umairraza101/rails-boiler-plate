@@ -30,9 +30,12 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.3.1'
+gem 'haml-rails'
 gem 'jquery-datatables'
 gem 'jquery-rails'
-gem 'haml-rails'
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+gem 'simple_form'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

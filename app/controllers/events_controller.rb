@@ -7,6 +7,7 @@ class EventsController < ApplicationController
     @events = current_user.events.all
   end
 
+
   # GET /events/1
   # GET /events/1.json
   def show; end
