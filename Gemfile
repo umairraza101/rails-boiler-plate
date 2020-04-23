@@ -29,6 +29,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootstrap', '~> 4.3.1'
+gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'haml-rails'
+gem 'jquery-datatables'
+gem 'jquery-rails'
+gem 'paperclip'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
